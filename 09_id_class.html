@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div, span, id and class</title>
+  <!-- Style used to show how classes can be added to any section while id is just one -->
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .enhance {
+      color: yellow;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="main-header">
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+
+  <ul id="main-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <!-- Emmett trick for an id tou can write div#about -> this would make the id about -->
+
+  <div id="about" class="card">
+    <h3>About</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nobis sapiente, repudiandae necessitatibus
+      perferendis qui ullam? <span class="enhance">Sint quibusdam repudiandae quae, magnam doloremque</span> eligendi
+      quos ad corrupti ullam rem
+      aliquam totam? Quas neque adipisci maiores cum nulla quasi ex, distinctio voluptates!</p>
+  </div>
+
+  <div id="contact" class="card">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Address: 50 Main St, Calgary, AB</li>
+      <li>Phone: (555) 555-5555</li>
+      <li>Email: me@gmail.com</li>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <p>Copyright &copy; 2021</p>
+  </div>
+</body>
+
+</html>
